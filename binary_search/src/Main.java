@@ -6,6 +6,7 @@ public class Main {
 
         System.out.println(biSearch(listOfIntegers, 5)); // 2
         System.out.println(biSearch(listOfIntegers, -1)); // null
+        System.out.println(biSearch(List.of(5), 3)); // null
     }
 
     /**
@@ -15,10 +16,6 @@ public class Main {
     private static Integer biSearch(List<Integer> data, Integer expectedNumber) {
         if (data.isEmpty()) {
             return null;
-        }
-
-        if (data.size() == 1) {
-            return data.get(0);
         }
 
         int low = 0;
