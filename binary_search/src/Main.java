@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println(biSearch(listOfIntegers, 5)); // 2
         System.out.println(biSearch(listOfIntegers, -1)); // null
-        System.out.println(biSearch(List.of(5), 5)); // null
+        System.out.println(biSearch(List.of(5), 3)); // null
     }
 
     /**
