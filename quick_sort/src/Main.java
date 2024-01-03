@@ -5,9 +5,12 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> integers = List.of(10,10, 5, 2,2, 3);
-        System.out.println(quickSort(integers));
+        System.out.println(quickSort(integers)); //2,2,3,5,10,10
     }
 
+    /**
+     * O(n*n) || O(n log(n)) depends on pivot selection
+     */
     private static List<Integer> quickSort(List<Integer> inputData) {
         if (inputData.size() < 2) {
             return inputData;
