@@ -7,6 +7,9 @@ public class Main {
         System.out.println(Arrays.toString(actual));
     }
 
+    /**
+     * O(n Log n)
+     */
     private static void mergeSort(int[] inputData, int inputDataLength) {
         if (inputDataLength < 2) {
             return;
